@@ -1,34 +1,57 @@
-<div>
-  <h2>Create a New Motorcycle</h2>
+<body>
+<main>
+  <section class="message">
+    <h2>Special Request</h2>
+    <p>If you could not find the motorcycle you were looking for just make a special request.
+      Enter the exact motorcycle you would like to rent from us and we will try to add it to
+      our collection</p>
+  </section>
+</main>
+
+
+<div class="input-form">
+  <h2>Request a diffrent Motorcycle</h2>
+  <p>Note: If you do not recive a sucsess message, try a diffrent ID!</p>
   <form (ngSubmit)="createMotorcycle()">
     <div>
       <label for="id">ID:</label>
-      <input type="number" id="id" name="id" [(ngModel)]="motorcycle.id">
+      <input type="number" id="id" name="id" [(ngModel)]="request.id">
     </div>
     <div>
       <label for="brand">Brand:</label>
-      <input type="text" id="brand" name="brand" [(ngModel)]="motorcycle.brand">
+      <input type="text" id="brand" name="brand" [(ngModel)]="request.brand">
     </div>
     <div>
       <label for="model">Model:</label>
-      <input type="text" id="model" name="model" [(ngModel)]="motorcycle.model">
+      <input type="text" id="model" name="model" [(ngModel)]="request.model">
     </div>
     <div>
       <label for="year">Year:</label>
-      <input type="number" id="year" name="year" [(ngModel)]="motorcycle.year">
+      <input type="number" id="year" name="year" [(ngModel)]="request.year">
     </div>
     <div>
       <label for="hp">HP:</label>
-      <input type="number" id="hp" name="hp" [(ngModel)]="motorcycle.hp">
+      <input type="number" id="hp" name="hp" [(ngModel)]="request.hp">
     </div>
     <div>
       <label for="ccm">CCM:</label>
-      <input type="number" id="ccm" name="ccm" [(ngModel)]="motorcycle.ccm">
+      <input type="number" id="ccm" name="ccm" [(ngModel)]="request.ccm">
     </div>
     <div>
       <label for="ccm">Kilometers:</label>
-      <input type="number" id="kilometers" name="kilometers" [(ngModel)]="motorcycle.kilometers">
+      <input type="number" id="kilometers" name="kilometers" [(ngModel)]="request.kilometers">
     </div>
     <button type="submit">Submit</button>
+
+    <div *ngIf="showSuccessMessage" class="success-message">
+      Motorcycle created successfully!
+    </div>
+
+    <div *ngIf="success">
+      <button class="btn btn-success" (click)="newRequest()">Make another Request</button>
+    </div>
+
+
   </form>
 </div>
+</body>
