@@ -13,14 +13,6 @@ export class RentSearchComponent implements OnInit {
   year = 2009;
   searchResults: Array<Motorcycle> = [];
 
-  //array which saves found motorcycles
-  motorcycles: Array<Motorcycle> = [];
-
-  //selectedMotorcycle = selected motorcycle
-  selectedMotorcycle: Motorcycle | null = null;
-
-
-
   //dependency injection to call httpClient
   constructor(private rentService: RentService) {
   }

@@ -6,7 +6,4 @@ export interface Motorcycle {
   hp: number;
   ccm: number;
   kilometers: number;
-  valid_inspection: boolean;
-  next_inspection : Date;
-  next_service : Date;
 }

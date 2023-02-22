@@ -17,7 +17,8 @@
 
     <div class="request-form">
 			<p>Did not find the right motocycle yet? Make a special Request!</p>
-        <button href="home">Make a special Request</button>
+
+      <li><button  href="request">Make a special Request</button></li>
 		</div>
 
   </main>
@@ -27,6 +28,7 @@
       <table>
         <thead>
           <tr>
+            <th>Id</th>
             <th>Year</th>
             <th>Brand</th>
             <th>Model</th>
@@ -39,6 +41,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let result of searchResults">
+            <td>{{ result.id }}</td>
             <td>{{ result.year }}</td>
             <td>{{ result.brand }}</td>
             <td>{{ result.model }}</td>

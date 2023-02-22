@@ -2,7 +2,10 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Motorcycle } from 'src/app/components/entities/motorcycle';
-import { AppModule } from 'src/app/app.module';
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +27,13 @@ export class RentService  {
 
   searchMotorcyclesByYearAndBrand(year: number, brand: string): Observable<Motorcycle[]> {
     return this.http.get<Motorcycle[]>(`${this.apiUrl}?year=${year}&brand=${brand}`);
+  }
+
+
+  private motorcyclesApiUrl = 'http://localhost:3000/motorcycles';
+
+  createMotorcycle(motorcycle: Motorcycle): Observable<Motorcycle> {
+    return this.http.post<Motorcycle>(this.motorcyclesApiUrl, motorcycle, httpOptions);
   }
 
 }

@@ -6,6 +6,8 @@ import { FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { RentSearchComponent } from './rent-search/rent-search.component';
+import { RentCreateComponent } from './rent-create/rent-create.component';
+
 
 @NgModule({
   imports:[
@@ -16,13 +18,15 @@ import { RentSearchComponent } from './rent-search/rent-search.component';
   ],
 
   declarations: [
-    RentSearchComponent
+    RentSearchComponent,
+    RentCreateComponent
   ],
 
   providers: [],
 
   exports: [
-    RentSearchComponent
+    RentSearchComponent,
+    RentCreateComponent
   ]
 
 })
