@@ -7,13 +7,17 @@ body {
 
 /* Main content styles */
 main {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
 
 /* Search form styles */
 .search-form {
+  flex: 1;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,9 +65,19 @@ button {
 }
 
 
-h2 {
-  font-size: 24px;
-  font-weight: bold;
+/* Request form styles*/
+.request-form {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.request-form p {
+	margin-bottom: 30px;
+	font-size: 18px;
 }
 
 
@@ -97,20 +111,12 @@ h2 {
   color: #fff;
 }
 
-.btn.select {
+.btn.edit {
   background-color: #333;
 }
 
-.btn.select:hover {
-  background-color: #696969;
-}
-
-.btn.edit {
-  background-color: #00a5cf;
-}
-
 .btn.edit:hover {
-  background-color: #0086a1;
+  background-color: #1b1c1c;
 }
 
 .btn.delete {
@@ -145,17 +151,3 @@ h2 {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
