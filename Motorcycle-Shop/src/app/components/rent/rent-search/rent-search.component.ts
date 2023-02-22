@@ -13,3 +13,5 @@ export class RentSearchComponent implements OnInit {
   }
 
 }
+
+//
