@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AppModule } from 'src/app/app.module';
 import { Motorcycle } from 'src/app/components/entities/motorcycle';
 import { RentService } from '../rent.service';
 
@@ -12,6 +11,7 @@ export class RentSearchComponent implements OnInit {
 
   brand = 'Yamaha';
   year = '2009';
+  searchResults: Array<Motorcycle> = [];
 
   //array which saves found motorcycles
   motorcycles: Array<Motorcycle> = [];
@@ -27,17 +27,18 @@ export class RentSearchComponent implements OnInit {
   constructor(private rentService: RentService) {
   }
 
+  ngOnInit(): void {
+  }
+
+
   //search method calls findMotorcycles which get entries from db.json
   search(): void {
     this.rentService.findMotorcycle(this.brand, this.year).subscribe({
       next: (motorcycles) => {
-        this.motorcycles = motorcycles
+        this.motorcycles = this.searchResults
       }
     });
 
-  }
-
-  ngOnInit(): void {
   }
 
 }
