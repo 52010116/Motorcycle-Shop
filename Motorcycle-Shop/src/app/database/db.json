@@ -1,0 +1,125 @@
+{
+  "motorcycles": [
+    {
+      "id": 101,
+      "brand": "Yamaha",
+      "model": "MT 07",
+      "year": "2015",
+      "hp": "75",
+      "ccm": "699",
+      "kilometers": 18760,
+      "valid_inspection": false,
+      "next_inspection": "2022-08-23",
+      "next_service": "2023-01-30"
+    },
+    {
+      "id": 345,
+      "brand": "Yamaha",
+      "model": "XT 660 X",
+      "year": "2009",
+      "hp": "70",
+      "ccm": "699",
+      "kilometers": 18760,
+      "valid_inspection": false,
+      "next_inspection": "2022-08-23",
+      "next_service": "2023-01-30"
+    },
+    {
+      "id": 234,
+      "brand": "Yamaha",
+      "model": "XT 660 X",
+      "year": "2009",
+      "hp": "70",
+      "ccm": "699",
+      "kilometers": 18760,
+      "valid_inspection": false,
+      "next_inspection": "2022-08-23",
+      "next_service": "2023-01-30"
+    },
+    {
+      "id": 890,
+      "brand": "Yamaha",
+      "model": "XT 660 X",
+      "year": "2009",
+      "hp": "70",
+      "ccm": "699",
+      "kilometers": 18760,
+      "valid_inspection": false,
+      "next_inspection": "2022-08-23",
+      "next_service": "2023-01-30"
+    },
+    {
+      "id": 555,
+      "brand": "Yamaha",
+      "model": "XT 660 X",
+      "year": "2009",
+      "hp": "70",
+      "ccm": "699",
+      "kilometers": 18760,
+      "valid_inspection": false,
+      "next_inspection": "2022-08-23",
+      "next_service": "2023-01-30"
+    },
+    {
+      "id": 102,
+      "brand": "Yamaha",
+      "model": "Tenere 700",
+      "year": "2020",
+      "hp": "75",
+      "ccm": "690",
+      "kilometers": 560,
+      "valid_inspection": true,
+      "next_inspection": "2025-07-23",
+      "next_service": "2023-01-05"
+    },
+    {
+      "id": 104,
+      "brand": "KTM",
+      "model": "SMC 690",
+      "year": "2016",
+      "hp": "67",
+      "ccm": "685",
+      "kilometers": 24560,
+      "valid_inspection": true,
+      "next_inspection": "2023-01-23",
+      "next_service": "2023-06-22"
+    },
+    {
+      "id": 105,
+      "brand": "Husqvarna",
+      "model": "701",
+      "year": "2018",
+      "hp": "71",
+      "ccm": "690",
+      "kilometers": 10560,
+      "valid_inspection": false,
+      "next_inspection": "2022-12-23",
+      "next_service": "2023-08-30"
+    },
+    {
+      "id": 106,
+      "brand": "BMW",
+      "model": "GS 800",
+      "year": "2019",
+      "hp": "85",
+      "ccm": "790",
+      "kilometers": 55560,
+      "valid_inspection": true,
+      "next_inspection": "2024-09-23",
+      "next_service": "2023-10-22"
+    }
+  ],
+  "posts": [
+    {
+      "id": 100,
+      "title": "Extra spare Key",
+      "body": "Please give me an extra spare Key",
+      "published": true
+    },
+    {
+      "title": "Hifle ",
+      "body": "Hilfe ich brauche einen Ersatzreifen",
+      "id": 101
+    }
+  ]
+}
