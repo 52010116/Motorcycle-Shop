@@ -18,16 +18,12 @@ export class RentService  {
   url = 'http://localhost:3000/motorcycles';
 
 
-  findMotorcycle(brand: string, year: string): Observable<Motorcycle[]> {
-    // definition data format
-    const headers = new HttpHeaders()
-        .set('Accept', 'application/json');
-    //returns a list of found entries
-    const params = new HttpParams()
-        .set('brand', brand)
-        .set('year', year);
 
-    return this.http.get<Motorcycle[]>(this.url, {headers, params});
+
+  private apiUrl = 'http://localhost:3000/motorcycles';
+
+  searchMotorcyclesByYearAndBrand(year: number, brand: string): Observable<Motorcycle[]> {
+    return this.http.get<Motorcycle[]>(`${this.apiUrl}?year=${year}&brand=${brand}`);
   }
 
 }

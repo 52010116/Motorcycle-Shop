@@ -7,6 +7,5 @@ export const RENT_ROUTES: Routes = [
   {
       path: "rent",
       component: RentSearchComponent
-
   },
 ];

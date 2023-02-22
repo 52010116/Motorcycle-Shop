@@ -1,30 +1,61 @@
-<header>
-  <h1>Motorcycle Rental</h1>
-  <nav>
-    <ul>
-      <li routerLinkActive="active"><a routerLink="home"><p>Home</p></a></li>
-      <li routerLinkActive="active"><a routerLink="rent"><p>Rental Motorcycles</p></a></li>
-      <li><a href="#">Make a special Request</a></li>
-    </ul>
-  </nav>
-</header>
 
-
-
-<div class="search-form">
-  <form>
-    <div class="form-group">
-      <label for="year">Year:</label>
-      <input type="number" id="year" name="year" [(ngModel)]="year">
+<body>
+  <main>
+    <div class="search-form">
+      <form>
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <input type="number" id="year" name="year" [(ngModel)]="year">
+        </div>
+        <div class="form-group">
+          <label for="brand">Brand:</label>
+          <input type="text" id="brand" name="brand" [(ngModel)]="brand">
+        </div>
+        <button type="button" (click)="search(year, brand)">Search</button>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="brand">Brand:</label>
-      <input type="text" id="brand" name="brand" [(ngModel)]="brand">
-    </div>
-    <button type="button" (click)="search()">Search</button>
-  </form>
-</div>
 
-<div class="search-results" *ngIf="searchResults && searchResults.length">
-  <h2>Search Results:</h2>
+    <div class="request">
+			<p>Did not find the right motocycle yet? Make a special Request!</p>
+			<a href="home" class="btn">Make a special Request</a>
+		</div>
+
+  </main>
+</body>
+
+    <div class="search-results" *ngIf="searchResults && searchResults.length">
+      <h2>Search Results:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Hp</th>
+            <th>Ccm</th>
+            <th>Kilometers</th>
+            <th>Actions</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let result of searchResults">
+            <td>{{ result.year }}</td>
+            <td>{{ result.brand }}</td>
+            <td>{{ result.model }}</td>
+            <td>{{ result.hp }}</td>
+            <td>{{ result.ccm }}</td>
+            <td>{{ result.kilometers }}</td>
+            <td>
+              <!--button class="btn select" (click)="(result)">Select</!--button>!-->
+              <button class="btn edit" (click)="(result)">Edit</button>
+              <button class="btn delete" (click)="(result)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
 

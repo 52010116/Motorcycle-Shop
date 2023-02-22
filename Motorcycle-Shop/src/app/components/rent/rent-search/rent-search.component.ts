@@ -10,7 +10,7 @@ import { RentService } from '../rent.service';
 export class RentSearchComponent implements OnInit {
 
   brand = 'Yamaha';
-  year = '2009';
+  year = 2009;
   searchResults: Array<Motorcycle> = [];
 
   //array which saves found motorcycles
@@ -19,9 +19,7 @@ export class RentSearchComponent implements OnInit {
   //selectedMotorcycle = selected motorcycle
   selectedMotorcycle: Motorcycle | null = null;
 
-  //basket shows if the motorcycle is selected + id
-  basket: { [key: number]: boolean } = {
-  };
+
 
   //dependency injection to call httpClient
   constructor(private rentService: RentService) {
@@ -30,15 +28,15 @@ export class RentSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  //search method calls findMotorcycles which get entries from db.json
-  search(): void {
-    this.rentService.findMotorcycle(this.brand, this.year).subscribe({
-      next: (motorcycles) => {
-        this.motorcycles = this.searchResults
+  search(year: number, brand: string) {
+    this.rentService.searchMotorcyclesByYearAndBrand(year, brand).subscribe(
+      result => {
+        this.searchResults = result;
+      },
+      error => {
+        console.log(error);
       }
-    });
-
+    );
   }
 
 }

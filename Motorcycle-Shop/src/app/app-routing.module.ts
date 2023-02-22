@@ -15,10 +15,6 @@ export const APP_ROUTES: Routes = [
     component: HomeComponent
   },
   {
-    path: "rent",
-    component: RentSearchComponent
-  },
-  {
     path: "**",
     redirectTo: "home"
   }
