@@ -1,3 +1,30 @@
-<p>
-  rent-search works!
-</p>
+<header>
+  <h1>Motorcycle Rental</h1>
+  <nav>
+    <ul>
+      <li routerLinkActive="active"><a routerLink="home"><p>Home</p></a></li>
+      <li routerLinkActive="active"><a routerLink="rent"><p>Rental Motorcycles</p></a></li>
+      <li><a href="#">Make a special Request</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<div class="search-form">
+  <form>
+    <div class="form-group">
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" [(ngModel)]="year">
+    </div>
+    <div class="form-group">
+      <label for="brand">Brand:</label>
+      <input type="text" id="brand" name="brand" [(ngModel)]="brand">
+    </div>
+    <button type="button" (click)="search(year, brand)">Search</button>
+  </form>
+</div>
+
+<div class="search-results" *ngIf="searchResults && searchResults.length">
+  <h2>Search Results:</h2>
+
