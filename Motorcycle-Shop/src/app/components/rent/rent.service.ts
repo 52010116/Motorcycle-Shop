@@ -18,24 +18,25 @@ export class RentService  {
   // SERVER
   // server install: npm install -g json-server
   // navigate to folder and then start server: json-server --watch db.json
-  url = 'http://localhost:3000/motorcycles';
+   private apiUrl = 'http://localhost:3000/motorcycles';
 
 
 
-
-  private apiUrl = 'http://localhost:3000/motorcycles';
-
-  searchMotorcyclesByYearAndBrand(year: number, brand: string): Observable<Motorcycle[]> {
+  searchMotorcycle(id: number, year: number, brand: string): Observable<Motorcycle[]> {
     return this.http.get<Motorcycle[]>(`${this.apiUrl}?year=${year}&brand=${brand}`);
   }
 
 
-  private motorcyclesApiUrl = 'http://localhost:3000/motorcycles';
-
-  createMotorcycle(motorcycle: Motorcycle): Observable<Motorcycle> {
-    return this.http.post<Motorcycle>(this.motorcyclesApiUrl, motorcycle, httpOptions);
+  deleteMotorcycle(id: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/${id}`, { headers: httpOptions.headers });
   }
 
+
+  createMotorcycle(motorcycle: Motorcycle): Observable<Motorcycle> {
+    return this.http.post<Motorcycle>(this.apiUrl, motorcycle, httpOptions);
+  }
+
+  //editMotorcycle(id: number): Observable<>
 }
 
 

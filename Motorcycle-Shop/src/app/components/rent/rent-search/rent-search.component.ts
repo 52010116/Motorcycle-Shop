@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Motorcycle } from 'src/app/components/entities/motorcycle';
 import { RentService } from '../rent.service';
 
@@ -9,6 +9,7 @@ import { RentService } from '../rent.service';
 })
 export class RentSearchComponent implements OnInit {
 
+  id = 0;
   brand = 'Yamaha';
   year = 2009;
   searchResults: Array<Motorcycle> = [];
@@ -20,8 +21,8 @@ export class RentSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  search(year: number, brand: string) {
-    this.rentService.searchMotorcyclesByYearAndBrand(year, brand).subscribe(
+  search(id: number, year: number, brand: string) {
+    this.rentService.searchMotorcycle(id, year, brand).subscribe(
       result => {
         this.searchResults = result;
       },
@@ -30,6 +31,21 @@ export class RentSearchComponent implements OnInit {
       }
     );
   }
+
+
+  delete(id: number) {
+    this.rentService.deleteMotorcycle(id).subscribe(
+    result => {
+    //removes deleted motorcycle from the search results
+    this.searchResults = this.searchResults.filter(motorcycle => motorcycle.id !== id);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+
 
 }
 

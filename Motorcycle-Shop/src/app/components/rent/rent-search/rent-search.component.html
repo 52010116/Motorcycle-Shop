@@ -1,4 +1,3 @@
-
 <body>
   <main>
     <div class="search-form">
@@ -11,7 +10,8 @@
           <label for="brand">Brand:</label>
           <input type="text" id="brand" name="brand" [(ngModel)]="brand">
         </div>
-        <button type="button" (click)="search(year, brand)">Search</button>
+
+        <button type="button" (click)="search(id, year, brand)">Search</button>
       </form>
     </div>
 
@@ -23,42 +23,36 @@
     </div>
 
   </main>
+
+  <div class="search-results" *ngIf="searchResults && searchResults.length">
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Year</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Hp</th>
+          <th>Ccm</th>
+          <th>Kilometers</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let result of searchResults">
+          <td>{{ result.id }}</td>
+          <td>{{ result.year }}</td>
+          <td>{{ result.brand }}</td>
+          <td>{{ result.model }}</td>
+          <td>{{ result.hp }}</td>
+          <td>{{ result.ccm }}</td>
+          <td>{{ result.kilometers }}</td>
+          <td>
+            <button class="btn edit" (click)="(result)">Edit</button>
+            <button class="btn delete" (click)="delete(result.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
-
-    <div class="search-results" *ngIf="searchResults && searchResults.length">
-      <table>
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Year</th>
-            <th>Brand</th>
-            <th>Model</th>
-            <th>Hp</th>
-            <th>Ccm</th>
-            <th>Kilometers</th>
-            <th>Actions</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let result of searchResults">
-            <td>{{ result.id }}</td>
-            <td>{{ result.year }}</td>
-            <td>{{ result.brand }}</td>
-            <td>{{ result.model }}</td>
-            <td>{{ result.hp }}</td>
-            <td>{{ result.ccm }}</td>
-            <td>{{ result.kilometers }}</td>
-            <td>
-              <!--button class="btn select" (click)="(result)">Select</!--button>!-->
-              <button class="btn edit" (click)="(result)">Edit</button>
-              <button class="btn delete" (click)="(result)">Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-
-
-

@@ -10,42 +10,6 @@
       "kilometers": 18760
     },
     {
-      "id": 345,
-      "brand": "Yamaha",
-      "model": "XT 660 X",
-      "year": "2009",
-      "hp": "70",
-      "ccm": "699",
-      "kilometers": 18760
-    },
-    {
-      "id": 234,
-      "brand": "Yamaha",
-      "model": "XT 660 X",
-      "year": "2009",
-      "hp": "70",
-      "ccm": "699",
-      "kilometers": 18760
-    },
-    {
-      "id": 890,
-      "brand": "Yamaha",
-      "model": "XT 660 X",
-      "year": "2009",
-      "hp": "70",
-      "ccm": "699",
-      "kilometers": 18760
-    },
-    {
-      "id": 555,
-      "brand": "Yamaha",
-      "model": "XT 660 X",
-      "year": "2009",
-      "hp": "70",
-      "ccm": "699",
-      "kilometers": 18760
-    },
-    {
       "id": 102,
       "brand": "Yamaha",
       "model": "Tenere 700",
@@ -82,15 +46,6 @@
       "kilometers": 55560
     },
     {
-      "id": 100,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
       "id": 510,
       "brand": "Yamaha",
       "model": "Tracer",
@@ -118,16 +73,7 @@
       "kilometers": 14987
     },
     {
-      "id": 93,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2009,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14996
-    },
-    {
-      "id": 92,
+      "id": 94,
       "brand": "Yamaha",
       "model": "Tracer",
       "year": 2023,
@@ -136,7 +82,7 @@
       "kilometers": 14987
     },
     {
-      "id": 891,
+      "id": 511,
       "brand": "Yamaha",
       "model": "MT",
       "year": 2023,
@@ -154,112 +100,31 @@
       "kilometers": 0
     },
     {
-      "id": 7,
+      "id": 100,
       "brand": "Yamaha",
-      "model": "MT",
+      "model": "Tracer",
       "year": 2009,
       "hp": 75,
-      "ccm": 700,
-      "kilometers": 0
+      "ccm": 660,
+      "kilometers": 14987
+    },
+    {
+      "id": 98,
+      "brand": "Yamaha",
+      "model": "Tracer",
+      "year": 2009,
+      "hp": 75,
+      "ccm": 660,
+      "kilometers": 14987
     },
     {
       "id": 108,
       "brand": "Yamaha",
       "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 63,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 8,
-      "brand": "Yamaha",
-      "model": "MT",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 700,
-      "kilometers": 0
-    },
-    {
-      "id": 111111,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 3524654,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 1005465,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 10068765,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 875,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 10068766,
-      "brand": "Yamaha",
-      "model": "MT",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 700,
-      "kilometers": 0
-    },
-    {
-      "id": 173,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 687454,
-      "brand": "Yamaha",
-      "model": "MT",
       "year": 2009,
       "hp": 75,
-      "ccm": 700,
-      "kilometers": 684
+      "ccm": 660,
+      "kilometers": 14987
     }
   ],
   "posts": [

@@ -9,6 +9,7 @@ import { RentSearchComponent } from './rent-search/rent-search.component';
 import { RentCreateComponent } from './rent-create/rent-create.component';
 
 
+
 @NgModule({
   imports:[
       CommonModule,
