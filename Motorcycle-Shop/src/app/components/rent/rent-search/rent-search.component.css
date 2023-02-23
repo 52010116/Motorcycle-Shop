@@ -114,6 +114,7 @@ button {
 
 .btn.edit {
   background-color: #333;
+  margin-right: 10px;
 }
 
 .btn.edit:hover {

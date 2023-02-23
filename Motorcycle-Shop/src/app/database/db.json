@@ -242,6 +242,24 @@
       "hp": 75,
       "ccm": 700,
       "kilometers": 0
+    },
+    {
+      "id": 173,
+      "brand": "Yamaha",
+      "model": "Tracer",
+      "year": 2023,
+      "hp": 75,
+      "ccm": 660,
+      "kilometers": 14987
+    },
+    {
+      "id": 687454,
+      "brand": "Yamaha",
+      "model": "MT",
+      "year": 2009,
+      "hp": 75,
+      "ccm": 700,
+      "kilometers": 684
     }
   ],
   "posts": [
