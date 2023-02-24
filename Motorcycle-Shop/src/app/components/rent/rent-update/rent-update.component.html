@@ -1,36 +1,55 @@
-<h2>Update Motorcycle</h2>
-<p>Enter the ID of the motorcycle you wish to update:</p>
+<body>
+<main>
+  <h2>Edit a motorcycle</h2>
+  <p>Enter the ID of the motorcycle you wish to update:</p>
 
-<!-- Input field for searching for a motorcycle by ID -->
-<input type="number" [(ngModel)]="id" placeholder="Motorcycle ID">
+  <div class="search-form">
+    <!-- Input field for searching for a motorcycle by ID -->
+    <input type="number" [(ngModel)]="id" placeholder="Motorcycle ID">
 
-<button (click)="searchMotorcycle()">Search</button>
+    <button (click)="searchMotorcycle()">Search</button>
+  </div>
+</main>
 
 <!-- Display the motorcycle details if editing mode is enabled -->
 <div class="input-form" *ngIf="editing && motorcycleForm">
   <h3>Motorcycle Details</h3>
 
   <form [formGroup]="motorcycleForm">
-    <label>ID:</label>
-    <input type="number" formControlName="id">
+    <div>
+      <label>ID:</label>
+      <input type="number" formControlName="id">
+    </div>
 
-    <label>Year:</label>
-    <input type="number" formControlName="year">
+    <div>
+      <label>Year:</label>
+      <input type="number" formControlName="year">
+    </div>
 
-    <label>Brand:</label>
-    <input type="text" formControlName="brand">
+    <div>
+      <label>Brand:</label>
+      <input type="text" formControlName="brand">
+    </div>
 
-    <label>Model:</label>
-    <input type="text" formControlName="model">
+    <div>
+      <label>Model:</label>
+      <input type="text" formControlName="model">
+    </div>
 
-    <label>HP:</label>
-    <input type="number" formControlName="hp">
+    <div>
+      <label>HP:</label>
+      <input type="number" formControlName="hp">
+    </div>
 
-    <label>CCM:</label>
-    <input type="number" formControlName="ccm">
+    <div>
+      <label>CCM:</label>
+      <input type="number" formControlName="ccm">
+    </div>
 
-    <label>Kilometers:</label>
-    <input type="number" formControlName="kilometers">
+    <div>
+      <label>Kilometers:</label>
+      <input type="number" formControlName="kilometers">
+    </div>
 
     <button (click)="saveMotorcycle()">Save</button>
     <button (click)="cancelEditing()">Cancel</button>
@@ -46,3 +65,5 @@
 
 <!-- Display a message if no motorcycle is found with the entered ID -->
 <div class="not-found" p *ngIf="noMotorcycleFound">Motorcycle with ID {{id}} not found </div>
+
+</body>

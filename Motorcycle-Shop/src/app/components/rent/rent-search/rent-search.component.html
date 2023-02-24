@@ -16,9 +16,9 @@
     </div>
 
     <div class="request-form">
-      <p>Did not find the right motorcycle yet? Make a special Request!</p>
+      <p>Did not find the right motorcycle? Create a new entry</p>
       <a href="request">
-        <button class="request-button">Request</button>
+        <button class="request-button">Create new</button>
       </a>
     </div>
 
@@ -48,7 +48,6 @@
           <td>{{ result.ccm }}</td>
           <td>{{ result.kilometers }}</td>
           <td>
-            <button class="btn edit" (click)="(result)">Edit</button>
             <button class="btn delete" (click)="delete(result.id)">Delete</button>
           </td>
         </tr>

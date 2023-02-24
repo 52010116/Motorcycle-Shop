@@ -12,7 +12,7 @@ export const RENT_ROUTES: Routes = [
       component: RentSearchComponent
   },
   {
-    path: "request",
+    path: "new-entry",
     component: RentCreateComponent
   },
   {

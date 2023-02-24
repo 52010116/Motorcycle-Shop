@@ -29,9 +29,9 @@
     },
     {
       "id": 105,
+      "year": "2018",
       "brand": "Husqvarna",
       "model": "701",
-      "year": "2018",
       "hp": "71",
       "ccm": "690",
       "kilometers": 10560
@@ -64,39 +64,12 @@
       "kilometers": 14987
     },
     {
-      "id": 95,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 94,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
       "id": 511,
       "brand": "Yamaha",
       "model": "MT",
       "year": 2023,
       "hp": 75,
       "ccm": 700,
-      "kilometers": 0
-    },
-    {
-      "id": 1,
-      "year": 2023,
-      "brand": "Yamaha",
-      "model": "MT",
-      "hp": 75,
-      "ccm": 701,
       "kilometers": 0
     },
     {
@@ -116,19 +89,33 @@
       "hp": 75,
       "ccm": 660,
       "kilometers": 0
-    }
-  ],
-  "posts": [
-    {
-      "id": 100,
-      "title": "Extra spare Key",
-      "body": "Please give me an extra spare Key",
-      "published": true
     },
     {
-      "title": "Hifle ",
-      "body": "Hilfe ich brauche einen Ersatzreifen",
-      "id": 101
+      "id": 80,
+      "brand": "Yamaha",
+      "model": "Tracer",
+      "year": 2009,
+      "hp": 75,
+      "ccm": 660,
+      "kilometers": 877
+    },
+    {
+      "id": 33333,
+      "brand": "Yamaha",
+      "model": "XT 660",
+      "year": 2014,
+      "hp": 54,
+      "ccm": 660,
+      "kilometers": 14987
+    },
+    {
+      "id": 500,
+      "brand": "Yamaha",
+      "model": "Tracer",
+      "year": 2023,
+      "hp": 75,
+      "ccm": 660,
+      "kilometers": 2201
     }
   ]
 }

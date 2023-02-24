@@ -1,16 +1,14 @@
 <body>
 <main>
   <section class="message">
-    <h2>Special Request</h2>
-    <p>If you could not find the motorcycle you were looking for just make a special request.
-      Enter the exact motorcycle you would like to rent from us and we will try to add it to
-      our collection.</p>
+    <h2>Create new motorcycles</h2>
+    <p>If you want to add a new motorcycle in the database, you can create it here.</p>
   </section>
 </main>
 
 
 <div class="input-form">
-  <h2>Request a diffrent Motorcycle</h2>
+  <h2>New entry</h2>
   <p>Note: If you do not recive a sucsess message, try a diffrent ID!</p>
   <form (ngSubmit)="createMotorcycle()">
     <div>
@@ -44,14 +42,13 @@
     <button type="submit">Submit</button>
 
     <div *ngIf="showSuccessMessage" class="success-message">
-      Motorcycle request submitted successfully!
+      New motorcycle entry submitted successfully!
     </div>
 
     <div *ngIf="success">
-      <button class="btn btn-success" (click)="newRequest()">Make another Request</button>
+      <button class="btn btn-success" (click)="newRequest()">Create another entry</button>
     </div>
-
-
   </form>
+
 </div>
 </body>
