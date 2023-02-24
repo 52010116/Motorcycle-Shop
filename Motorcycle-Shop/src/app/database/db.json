@@ -2,12 +2,12 @@
   "motorcycles": [
     {
       "id": 101,
-      "year": 2016,
+      "year": 2018,
       "brand": "KTM",
       "model": "MT 07",
       "hp": 78,
-      "ccm": "699",
-      "kilometers": 99999999
+      "ccm": 698,
+      "kilometers": 1250
     },
     {
       "id": 102,
@@ -92,21 +92,12 @@
     },
     {
       "id": 1,
+      "year": 2023,
       "brand": "Yamaha",
       "model": "MT",
-      "year": 2023,
       "hp": 75,
-      "ccm": 700,
+      "ccm": 701,
       "kilometers": 0
-    },
-    {
-      "id": 108,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2009,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
     },
     {
       "id": 65432,
@@ -116,6 +107,15 @@
       "hp": 75,
       "ccm": 660,
       "kilometers": 14987
+    },
+    {
+      "id": 98,
+      "year": 2023,
+      "brand": "Yamaha",
+      "model": "Tracer",
+      "hp": 75,
+      "ccm": 660,
+      "kilometers": 0
     }
   ],
   "posts": [

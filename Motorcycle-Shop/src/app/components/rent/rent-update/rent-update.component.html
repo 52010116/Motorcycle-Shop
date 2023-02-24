@@ -7,7 +7,7 @@
 <button (click)="searchMotorcycle()">Search</button>
 
 <!-- Display the motorcycle details if editing mode is enabled -->
-<div *ngIf="editing && motorcycleForm">
+<div class="input-form" *ngIf="editing && motorcycleForm">
   <h3>Motorcycle Details</h3>
 
   <form [formGroup]="motorcycleForm">
@@ -37,5 +37,12 @@
   </form>
 </div>
 
+<!-- Success message after saving the changes -->
+<div class="success" *ngIf="successMessage">
+  {{ successMessage }}
+</div>
+
+
+
 <!-- Display a message if no motorcycle is found with the entered ID -->
-<p *ngIf="noMotorcycleFound">Motorcycle with ID {{id}} not found </p>
+<div class="not-found" p *ngIf="noMotorcycleFound">Motorcycle with ID {{id}} not found </div>

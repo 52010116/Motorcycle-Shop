@@ -56,6 +56,9 @@ export class RentUpdateComponent implements OnInit {
           (motorcycle) => {
             console.log(`Updated motorcycle with id ${motorcycle.id}`);
             this.editing = false;
+            this.motorcycle = motorcycle;
+            this.successMessage = 'Edited successfully!';
+            setTimeout(() => { this.successMessage = ''; }, 3000); // Clear success message after 3 seconds
           },
           (error) => {
             console.log(error);
