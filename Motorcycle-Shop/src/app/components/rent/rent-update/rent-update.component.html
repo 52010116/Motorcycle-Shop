@@ -1,1 +1,41 @@
+<h2>Update Motorcycle</h2>
+<p>Enter the ID of the motorcycle you wish to update:</p>
 
+<!-- Input field for searching for a motorcycle by ID -->
+<input type="number" [(ngModel)]="id" placeholder="Motorcycle ID">
+
+<button (click)="searchMotorcycle()">Search</button>
+
+<!-- Display the motorcycle details if editing mode is enabled -->
+<div *ngIf="editing && motorcycleForm">
+  <h3>Motorcycle Details</h3>
+
+  <form [formGroup]="motorcycleForm">
+    <label>ID:</label>
+    <input type="number" formControlName="id">
+
+    <label>Year:</label>
+    <input type="number" formControlName="year">
+
+    <label>Brand:</label>
+    <input type="text" formControlName="brand">
+
+    <label>Model:</label>
+    <input type="text" formControlName="model">
+
+    <label>HP:</label>
+    <input type="number" formControlName="hp">
+
+    <label>CCM:</label>
+    <input type="number" formControlName="ccm">
+
+    <label>Kilometers:</label>
+    <input type="number" formControlName="kilometers">
+
+    <button (click)="saveMotorcycle()">Save</button>
+    <button (click)="cancelEditing()">Cancel</button>
+  </form>
+</div>
+
+<!-- Display a message if no motorcycle is found with the entered ID -->
+<p *ngIf="noMotorcycleFound">Motorcycle with ID {{id}} not found </p>
