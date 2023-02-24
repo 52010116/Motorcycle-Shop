@@ -12,7 +12,7 @@ const httpOptions = {
 })
 export class RentService  {
 
-  // injection of HTTPClient module
+  // injection of HttpClient module
   constructor(private http: HttpClient) { }
 
   // SERVER
@@ -36,11 +36,19 @@ export class RentService  {
     return this.http.post<Motorcycle>(this.apiUrl, motorcycle, httpOptions);
   }
 
-  //editMotorcycle(id: number): Observable<>
+
+  getMotorcycleById(id: number): Observable<Motorcycle> {
+    return this.http.get<Motorcycle>(`${this.apiUrl}/${id}`);
+  }
+
+  updateMotorcycle(id: number, updatedMotorcycle: Motorcycle): Observable<Motorcycle> {
+    const url = `${this.apiUrl}/motorcycles/${id}`;
+    return this.http.put<Motorcycle>(url, updatedMotorcycle, httpOptions);
+  }
+
+
+
 }
-
-
-
 
 
 

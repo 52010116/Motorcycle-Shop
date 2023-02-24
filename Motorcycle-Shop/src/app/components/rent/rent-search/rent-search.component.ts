@@ -1,4 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Motorcycle } from 'src/app/components/entities/motorcycle';
 import { RentService } from '../rent.service';
 
@@ -13,6 +14,7 @@ export class RentSearchComponent implements OnInit {
   brand = 'Yamaha';
   year = 2009;
   searchResults: Array<Motorcycle> = [];
+
 
   //dependency injection to call httpClient
   constructor(private rentService: RentService) {

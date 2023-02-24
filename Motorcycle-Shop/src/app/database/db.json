@@ -100,24 +100,6 @@
       "kilometers": 0
     },
     {
-      "id": 100,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2009,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
-      "id": 98,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2009,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
       "id": 108,
       "brand": "Yamaha",
       "model": "Tracer",
