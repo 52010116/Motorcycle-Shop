@@ -41,9 +41,8 @@ export class RentService  {
     return this.http.get<Motorcycle>(`${this.apiUrl}/${id}`);
   }
 
-  updateMotorcycle(id: number, updatedMotorcycle: Motorcycle): Observable<Motorcycle> {
-    const url = `${this.apiUrl}/motorcycles/${id}`;
-    return this.http.put<Motorcycle>(url, updatedMotorcycle, httpOptions);
+  updateMotorcycle(id: number, motorcycle: Motorcycle): Observable<Motorcycle> {
+    return this.http.put<Motorcycle>(`${this.apiUrl}/${id}`, motorcycle);
   }
 
 

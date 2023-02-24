@@ -2,12 +2,12 @@
   "motorcycles": [
     {
       "id": 101,
-      "brand": "Yamaha",
+      "year": 2016,
+      "brand": "KTM",
       "model": "MT 07",
-      "year": "2015",
-      "hp": "75",
+      "hp": 78,
       "ccm": "699",
-      "kilometers": 18760
+      "kilometers": 99999999
     },
     {
       "id": 102,
@@ -20,9 +20,9 @@
     },
     {
       "id": 104,
+      "year": 2020,
       "brand": "KTM",
       "model": "SMC 690",
-      "year": "2016",
       "hp": "67",
       "ccm": "685",
       "kilometers": 24560
@@ -101,6 +101,15 @@
     },
     {
       "id": 108,
+      "brand": "Yamaha",
+      "model": "Tracer",
+      "year": 2009,
+      "hp": 75,
+      "ccm": 660,
+      "kilometers": 14987
+    },
+    {
+      "id": 65432,
       "brand": "Yamaha",
       "model": "Tracer",
       "year": 2009,
