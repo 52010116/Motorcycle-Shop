@@ -58,7 +58,7 @@ export class RentCreateComponent implements OnInit{
     this.success = false;
     this.submitted = false;
     this.request = {
-    id: 0,
+    id: 100,
     brand: 'Yamaha',
     model: 'MT',
     year: 2023,

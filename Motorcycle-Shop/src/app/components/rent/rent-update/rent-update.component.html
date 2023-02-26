@@ -11,12 +11,12 @@
   </div>
 </main>
 
-<!-- Display the motorcycle details if editing mode is enabled -->
+<!-- Display motorcycle details if editing mode is enabled -->
 <div class="input-form" *ngIf="editing && motorcycleForm">
   <h3>Motorcycle Details</h3>
 
   <form [formGroup]="motorcycleForm">
-    <div>
+    <div class="id">
       <label>ID:</label>
       <input type="number" formControlName="id">
     </div>

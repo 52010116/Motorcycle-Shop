@@ -26,7 +26,6 @@ h2, p, .search-form {
 }
 
 button {
-  margin-top: 20px;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
@@ -45,7 +44,6 @@ input {
   font-size: 16px;
 }
 
-
 .input-form {
   display: flex;
   flex-direction: column;
@@ -55,6 +53,10 @@ input {
   border-radius: 10px;
   box-shadow: 0px 0px 40px #888888;
   margin: 10px;
+}
+
+.id{
+  pointer-events: none;
 }
 
 .input-form h3 {
