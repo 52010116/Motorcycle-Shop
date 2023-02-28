@@ -1,5 +1,4 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { Motorcycle } from 'src/app/components/entities/motorcycle';
 import { RentService } from '../rent.service';
 
@@ -23,6 +22,8 @@ export class RentSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  // calls the searchMotorcycle method of the rentService to search for motorcycles.
   search(id: number, year: number, brand: string) {
     this.rentService.searchMotorcycle(id, year, brand).subscribe(
       result => {
@@ -35,6 +36,7 @@ export class RentSearchComponent implements OnInit {
   }
 
 
+  // calls the searchMotorcycle method of the rentService to delete motorcycles.
   delete(id: number) {
     this.rentService.deleteMotorcycle(id).subscribe(
     result => {
@@ -46,8 +48,6 @@ export class RentSearchComponent implements OnInit {
       }
     );
   }
-
-
 
 }
 

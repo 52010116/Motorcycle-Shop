@@ -2,10 +2,10 @@
   "motorcycles": [
     {
       "id": 101,
-      "year": 2018,
+      "year": 2021,
       "brand": "KTM",
-      "model": "MT 07",
-      "hp": 78,
+      "model": "Duke",
+      "hp": 71,
       "ccm": 698,
       "kilometers": 1250
     },
@@ -116,6 +116,24 @@
       "hp": 48,
       "ccm": 660,
       "kilometers": 7421
+    },
+    {
+      "id": 224,
+      "brand": "Yamaha",
+      "model": "XT 660",
+      "year": 2005,
+      "hp": 48,
+      "ccm": 660,
+      "kilometers": 63571
+    },
+    {
+      "id": 1003,
+      "brand": "Yamaha",
+      "model": "XT 660 R",
+      "year": 2009,
+      "hp": 49,
+      "ccm": 660,
+      "kilometers": 238
     }
   ]
 }

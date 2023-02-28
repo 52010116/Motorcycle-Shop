@@ -4,7 +4,6 @@ body {
   background-color: #9cd4e1;
 }
 
-
 /* Header styles */
 header {
 	background-color: #333;
@@ -19,6 +18,7 @@ header h1 {
 	text-align: center;
 }
 
+/* Navigation styles */
 nav ul {
 	margin: 0;
 	padding: 0;

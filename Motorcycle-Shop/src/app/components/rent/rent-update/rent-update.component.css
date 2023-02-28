@@ -1,7 +1,9 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
 }
 
+/* Main content styles */
 main {
   font-family: Arial, sans-serif;
   display: flex;
@@ -15,6 +17,7 @@ main {
   margin-bottom: 15px;
 }
 
+/* Search form styles */
 h2, p, .search-form {
   margin: 15px;
 }
@@ -35,6 +38,7 @@ button {
   cursor: pointer;
 }
 
+/* Input form styles*/
 input {
   padding: 10px;
   border-radius: 5px;
@@ -94,6 +98,7 @@ input {
   margin-top: 20px;
 }
 
+/* Feedback styles*/
 .success {
   margin-top: 20px;
   padding: 10px;

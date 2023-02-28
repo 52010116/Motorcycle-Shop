@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Motorcycle } from 'src/app/components/entities/motorcycle';
 import { RentService } from '../rent.service';
 
@@ -9,9 +8,13 @@ import { RentService } from '../rent.service';
   styleUrls: ['./rent-create.component.css']
 })
 export class RentCreateComponent implements OnInit{
+  // flag to show/hide success message
   showSuccessMessage = false;
+
+  // flag to indicate whether the operation was successful or not
   success: boolean = false;
 
+  // object to hold form data
   request: Motorcycle = {
     id: 100,
     brand: 'Yamaha',
@@ -21,6 +24,8 @@ export class RentCreateComponent implements OnInit{
     ccm: 660,
     kilometers: 14987
   };
+
+  // flag to indicate if the form was submitted
   submitted = false;
 
   constructor(private rentService: RentService) { }
@@ -40,20 +45,24 @@ export class RentCreateComponent implements OnInit{
       kilometers: this.request.kilometers
     };
 
-
+    // calls the createMotorcycle method of the RentService to create the new motorcycle entry
     this.rentService.createMotorcycle(data)
       .subscribe(() => {
         console.log('Motorcycle created successfully');
+
+        // sets flags to show success message and indicate successful operation
         this.showSuccessMessage = true;
         this.success = true;
         this.submitted = true;
+
+        // hides success message after 3 seconds
         setTimeout(() => {
           this.showSuccessMessage = false;
         }, 3000);
       });
   }
 
-  // generate a new request
+  // method to generate a new request with default values
   newRequest(): void {
     this.success = false;
     this.submitted = false;

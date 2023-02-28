@@ -4,14 +4,12 @@
   <p>Enter the ID of the motorcycle you wish to update:</p>
 
   <div class="search-form">
-    <!-- Input field for searching for a motorcycle by ID -->
     <input type="number" [(ngModel)]="id" placeholder="Motorcycle ID">
-
     <button (click)="searchMotorcycle()">Search</button>
   </div>
 </main>
 
-<!-- Display motorcycle details if editing mode is enabled -->
+
 <div class="input-form" *ngIf="editing && motorcycleForm">
   <h3>Motorcycle Details</h3>
 
@@ -56,14 +54,12 @@
   </form>
 </div>
 
-<!-- Success message after saving the changes -->
+
 <div class="success" *ngIf="successMessage">
   {{ successMessage }}
 </div>
 
 
-
-<!-- Display a message if no motorcycle is found with the entered ID -->
 <div class="not-found" p *ngIf="noMotorcycleFound">Motorcycle with ID {{id}} not found </div>
 
 </body>

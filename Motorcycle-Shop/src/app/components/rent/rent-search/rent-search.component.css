@@ -12,8 +12,6 @@ main {
   align-items: center;
 }
 
-
-
 /* Search form styles */
 .search-form {
   flex: 1;
@@ -35,7 +33,6 @@ form {
   display: flex;
   flex-direction: row;
   margin-top: 40px;
-
 }
 
 label {
@@ -64,7 +61,6 @@ button {
   cursor: pointer;
 }
 
-
 /* Request form styles*/
 .request-form {
   flex: 1;
@@ -79,7 +75,6 @@ button {
 	margin-bottom: 30px;
 	font-size: 18px;
 }
-
 
 /* Search result styles */
 .search-results {
@@ -118,8 +113,6 @@ button {
 .btn.delete:hover {
   background-color: #a60000;
 }
-
-
 
 .search-form {
   display: flex;

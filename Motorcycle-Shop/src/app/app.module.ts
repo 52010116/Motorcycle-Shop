@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { RentModule } from './components/rent/rent.module';
 import { HomeComponent } from './components/home/home.component';
 import { CommonModule } from '@angular/common';
-//import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   imports: [
@@ -23,8 +22,7 @@ import { CommonModule } from '@angular/common';
   ],
   declarations: [
     AppComponent,
-    HomeComponent,
-    //LoginComponent,
+    HomeComponent
   ],
   exports: [
     CommonModule,
