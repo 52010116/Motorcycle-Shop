@@ -55,15 +55,6 @@
       "kilometers": 14987
     },
     {
-      "id": 97,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2023,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
-    },
-    {
       "id": 511,
       "brand": "Yamaha",
       "model": "MT",
@@ -71,15 +62,6 @@
       "hp": 75,
       "ccm": 700,
       "kilometers": 0
-    },
-    {
-      "id": 65432,
-      "brand": "Yamaha",
-      "model": "Tracer",
-      "year": 2009,
-      "hp": 75,
-      "ccm": 660,
-      "kilometers": 14987
     },
     {
       "id": 98,
@@ -134,6 +116,15 @@
       "hp": 49,
       "ccm": 660,
       "kilometers": 238
+    },
+    {
+      "id": 93,
+      "year": 2009,
+      "brand": "Yamaha",
+      "model": "Xt 500",
+      "hp": 24,
+      "ccm": 500,
+      "kilometers": 50187
     }
   ]
 }
